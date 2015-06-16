@@ -8,6 +8,8 @@ while goodbyes < 3
 
 	if text == "BYE"
 		goodbyes = goodbyes + 1
+	else
+		goodbyes = 0
 	end
 
 	if text == text.upcase
