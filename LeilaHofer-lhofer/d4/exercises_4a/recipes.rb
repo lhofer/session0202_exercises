@@ -5,11 +5,11 @@ dishes = {
 }
 
 recipes = {
-	:pesto => {
+	:pesto => [
 		:description => "green sauce. So good.",
 		:ingredients => ["basil", "pine nuts", "chees", "olive oil"],
 		:steps => ["grind basil, pine nuts, cheese", "add oil", "serve"]
-	},
+	],
 	:garlic_bread => {
 		:description => "yum!",
 		:ingredients => ["bread", "garlic", "butter"],
@@ -25,6 +25,6 @@ recipes = {
 
 #Checks
 print dishes.keys
-print recipes[:pesto][:ingredients]
-
+#print recipes[:pesto][:ingredients]
+print recipes[:pesto]
 
