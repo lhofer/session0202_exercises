@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+    header {
+      text-align: center;
+      background: url("http://www.travelstart.co.za/blog/wp-content/uploads/2013/11/Greg-Lumley.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .top {
+      padding: 40px 0px 40px 0px;
+    }
+    .large_top {
+      font-size: 90px;
+      font-weight: 900;
+      -webkit-text-stroke: 2px #555555;
+    }
+    .small_top {
+      font-size: 60px;
+      color: #555555;
+      font-weight: 400;
+      -webkit-text-stroke: 2px white;
+    }
+    .hero-unit {
+      margin: 40px 40px 0px 40px;
+      padding: 20px;
+      color: #555555;
+      background-color: #eeeeee;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+    .header_body {
+      font-size: 30px;
+      font-weight: 100px;
+    }
+    .text_body {
+      font-size: 20px;
+      font-weight: 100px;
+    }
+    .header_day {
+      color: white;
+      font-size: 40px;
+      font-weight: 800;
+      -webkit-text-stroke: 2px #555555;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    form {
+      margin: 20px auto;
+      width: 250px;
+    }
+    img {
+      width: 250px;
+      height: 150px;
+      margin: 10px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+    .wes {
+      width: 500px;
+      height: 300px;
+    }
+    .images {
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+        
+      /* Safari and Chrome */
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+    }
+    footer {
+      margin: 40px;
+    }
+    @media (max-width: 700px) {
+      .top {
+        padding: 20px 0px 20px 0px;
+      }
+      .large_top {
+        font-size: 60px;
+      }
+      .small_top {
+        font-size: 40px;
+      }
+      .text_body {
+        font-size: 25;
+      }
+      .header_body {
+        font-size: 16;
+      }
+    }

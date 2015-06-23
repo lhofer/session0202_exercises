@@ -1,0 +1,8 @@
+<h3 class = "header_day"><%= @day_name.capitalize %></h3>
+
+<% @to_do.each do |activity| %>
+  <div class="hero-unit">
+    <img src=<%= activity[1] %>>
+    <small class = "text_body"><%= activity[0] %></small>
+  </div>
+<% end %>
