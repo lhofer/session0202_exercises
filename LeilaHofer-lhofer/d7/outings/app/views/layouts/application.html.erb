@@ -37,7 +37,7 @@
           <ul class="nav navbar-nav">
             <li><%= link_to 'Home', welcome_index_path %></li>
             <% @days.each do |day_of_week| %>
-              <li><a href= <%= day_of_week %> ><%= day_of_week.capitalize %></a></li>
+              <li><%=link_to day_of_week.capitalize, welcome_day_path(:day=>day_of_week) %></li>
             <% end %>
             <li><%=link_to 'Contact Us', welcome_contact_us_path %></li>
           </ul>
