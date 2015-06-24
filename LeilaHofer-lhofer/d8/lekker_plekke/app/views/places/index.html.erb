@@ -1,0 +1,15 @@
+<h1> Lekker Plekke </h1>
+<table>
+	<% @places.each do |place| %>
+		<tr>
+			<td><%= place.name %></td>
+			<td><%= link_to 'Show', place_path(place) %></td>
+			<td><%= link_to 'Edit', edit_place_path(place) %></td>
+			<td><%= link_to 'Delete', place_path(place),
+				method: :delete,
+				data: {confirm: 'Are you sure you want to delete this place?'} %></td>
+		</tr>
+	<% end %>
+</table>
+
+<p><%= link_to 'Add New Place', new_place_path %></p>

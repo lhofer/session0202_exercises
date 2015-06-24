@@ -1,0 +1,21 @@
+<%= form_for @place do |f| %>
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div>
+		<%= f.label :rating %>
+		<%= f.text_field :rating %>
+	</div>
+	<div>
+		<%= f.label :info %>
+		<%= f.text_field :info %>
+	</div>
+	<div>
+		<%= f.label :location %>
+		<%= f.text_field :location %>
+	</div>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
