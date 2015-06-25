@@ -1,0 +1,13 @@
+<%= form_for ([@place, @place.comments.build]) do |f| %>
+	<div>
+		<%= f.label :commenter %>
+		<%= f.text_field :commenter %>
+	</div>
+	<div>
+		<%= f.label :text %>
+		<%= f.text_field :text %>
+	</div>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
