@@ -7,8 +7,8 @@ class CommentsController < ApplicationController
 	end
 
 	def destroy
-		@place = Place.find(params[:id])
-		@comment = @place.comments.create(comment_params)
+		@place  = Place.find(params[:id])
+		@comment = Comment.find(params[:place_id])
 		@comment.destroy
 		redirect_to place_path(@place)
 	end

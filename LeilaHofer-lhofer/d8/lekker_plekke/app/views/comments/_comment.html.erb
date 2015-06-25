@@ -1,15 +1,17 @@
-<p>
-	<strong>Comment: </strong>
-	<%= comment.commenter %>
-</p>
+<form>
+	<p>
+		<strong>Comment: </strong>
+		<%= @comment.commenter %>
+	</p>
 
-<p>
-	<strong>Body: </strong>
-	<%= comment.text %>
-</p>
+	<p>
+		<strong>Body: </strong>
+		<%= @comment.text %>
+	</p>
 
-<p>
-	<%= link_to 'Delet Comment',
-		method: :delete,
-		data: { confirm: 'Are you sure?'} %>
-</p>
+	<p>
+		<%= link_to 'Delete Comment', place_comment_path(@comment, @place),
+			method: :delete,
+			data: { confirm: 'Are you sure?'} %>
+	</p>
+</form>
