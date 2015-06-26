@@ -1,17 +1,23 @@
 <%= form_for ([@place, @place.comments.build]) do |f| %>
-	<form role="form">
-
+	<form role="form" class="form-horizontal">
 		<div class = "form-group">
-			<%= f.label :commenter %>
-			<%= f.text_field :commenter, :placeholder => "your name", :class => "form-control" %>
+			<%= f.label :commenter, :class => "col-sm-offset-2 col-sm-3 text-right" %>
+			<div class="col-sm-3">
+				<%= f.text_field :commenter, :placeholder => "Your Name", :class => "form-control"%>
+			</div>
+		</div>
+		</br>
+		<div class = "form-group">
+			<%= f.label :text, :class => "col-sm-offset-2 col-sm-3 text-right" %>
+			<div class="col-sm-3">
+				<%= f.text_field :text, :placeholder => "Text", :class => "form-control"%>
+			</div>
 		</div>
 		</br>
 		<div class="form-group">
-			<%= f.label :text %>
-			<%= f.text_field :text, :placeholder => "Comment text", :class => "form-control" %>
+			<div class = "col-sm-offset-1 col-sm-11" >
+				<%= f.submit :class => "btn btn-default" %>
+			</div>
 		</div>
-		<p>
-			<%= f.submit :class => "btn btn-default"%>
-		</p>
-	</form>
+</form>
 <% end %>
