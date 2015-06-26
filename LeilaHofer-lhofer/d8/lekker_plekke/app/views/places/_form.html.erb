@@ -1,21 +1,27 @@
 <%= form_for @place do |f| %>
-	<div>
+<form role = "form">
+	<div class = "form-group">
 		<%= f.label :name %>
-		<%= f.text_field :name %>
+		<%= f.text_field :name, :placeholder => "Place Name", :class => "form-control"%>
 	</div>
-	<div>
+	</br>
+	<div class = "form-group">
 		<%= f.label :rating %>
-		<%= f.text_field :rating %>
+		<%= f.text_field :rating, :placeholder => "1 to 10", :class => "form-control" %>
 	</div>
-	<div>
+	</br>
+	<div class = "form-group">
 		<%= f.label :info %>
-		<%= f.text_field :info %>
+		<%= f.text_field :info, :placeholder => "explain the rating", :class => "form-control" %>
+	</div>
+	</br>
+	<div class = "form-group">
+		<%= f.label :location %>
+		<%= f.text_field :location, :placeholder => "Address or city", :class => "form-control" %>
 	</div>
 	<div>
-		<%= f.label :location %>
-		<%= f.text_field :location %>
+		<%= f.submit :class => "btn btn-default" %>
 	</div>
-	<p>
-		<%= f.submit %>
-	</p>
+</form>
 <% end %>
+</br>
