@@ -1,39 +1,33 @@
 <%= form_for @place do |f| %>
-<form role="form" class="form-horizontal">
-	<div class = "form-group">
+	<div class = "modal-body">
 		<%= f.label :name, :class => "col-sm-offset-2 col-sm-3 text-right" %>
 		<div class="col-sm-3">
 			<%= f.text_field :name, :placeholder => "Place Name", :class => "form-control"%>
 		</div>
 	</div>
-	</br>
-	<div class = "form-group">
+	<div class = "modal-body">
 		<%= f.label :rating, :class => "col-sm-offset-2 col-sm-3 text-right" %>
 		<div class="col-sm-3">
 			<%= f.text_field :rating, :placeholder => "1 to 10", :class => "form-control" %>
 		</div>
 	</div>
-	</br>
-	<div class = "form-group">
+	<div class = "modal-body">
 		<%= f.label :info, :class => "col-sm-offset-2 col-sm-3 text-right" %>
 		<div class="col-sm-3">
 			<%= f.text_field :info, :placeholder => "explain the rating", :class => "form-control" %>
 		</div>
 	</div>
-	</br>
-	<div class = "form-group">
+	<div class = "modal-body">
 		<%= f.label :location, :class => "col-sm-offset-2 col-sm-3 text-right" %>
 		<div class="col-sm-3">
 			<%= f.text_field :location, :placeholder => "Address or city", :class => "form-control" %>
 		</div>
 	</div>
 	</br>
-	<div class="form-group">
+	</br>
+	<div class="modal-footer">
 		<div class = "col-sm-offset-1 col-sm-11" >
-			<%= f.submit :class => "btn btn-default" %>
+			<%= f.submit :class => "btn btn-primary" %>
 		</div>
 	</div>
-	</br>
-</form>
 <% end %>
-</br>
